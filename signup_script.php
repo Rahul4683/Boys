@@ -1,5 +1,5 @@
 <?php
-require "includes/common.php";
+require "common/common.php";
 session_start();
 
 $email = $_POST['eMail'];
