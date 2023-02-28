@@ -32,7 +32,7 @@ include 'common/header.php';
             <div class="col-md-8 mx-auto">
                 <div class="jumbotron text-center">
                       <h3>Your order is confirmed. Thank you for shopping with us.</h3><hr>
-                    <p>Click <a href="products.php">here</a> to purchase any other item.</p>
+                    <p>Click <a href="product.php">here</a> to purchase any other item.</p>
                 </div>
             </div>
         </div>
