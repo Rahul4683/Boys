@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 27, 2023 at 04:10 PM
+-- Generation Time: Feb 28, 2023 at 05:35 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -52,6 +52,27 @@ INSERT INTO `products` (`id`, `name`, `price`, `mprice`, `image`, `star`, `revie
 (8, 'Product 8', 2300, 6000, 'img/jeans1.jpeg', 4.5, 92),
 (9, 'T Shirt', 1500, 4000, 'img/tshirt2.png', 3.5, 96),
 (10, 'Adjustable Dumbell', 7000, 10000, 'img/dumbells2.jpg', 4.5, 70);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `review_table`
+--
+
+CREATE TABLE `review_table` (
+  `review_id` int(11) NOT NULL,
+  `user_name` varchar(200) NOT NULL,
+  `user_rating` int(1) NOT NULL,
+  `user_review` text NOT NULL,
+  `datetime` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `review_table`
+--
+
+INSERT INTO `review_table` (`review_id`, `user_name`, `user_rating`, `user_review`, `datetime`) VALUES
+(0, 'rj@gmail.com', 5, 'nice website', 1677594637);
 
 -- --------------------------------------------------------
 
@@ -105,7 +126,20 @@ INSERT INTO `users_products` (`id`, `user_id`, `item_id`, `status`) VALUES
 (55, 68, 2, 'Confirmed'),
 (58, 68, 2, 'Confirmed'),
 (60, 68, 2, 'Confirmed'),
-(61, 68, 1, 'Confirmed');
+(61, 68, 1, 'Confirmed'),
+(62, 68, 1, 'Confirmed'),
+(63, 68, 2, 'Confirmed'),
+(64, 68, 1, 'Confirmed'),
+(65, 68, 2, 'Confirmed'),
+(66, 68, 2, 'Confirmed'),
+(67, 68, 3, 'Confirmed'),
+(68, 68, 1, 'Confirmed'),
+(69, 68, 2, 'Confirmed'),
+(70, 68, 2, 'Confirmed'),
+(71, 68, 2, 'Confirmed'),
+(72, 68, 1, 'Confirmed'),
+(73, 68, 2, 'Confirmed'),
+(74, 68, 2, 'Confirmed');
 
 --
 -- Indexes for dumped tables
@@ -151,7 +185,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users_products`
 --
 ALTER TABLE `users_products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
