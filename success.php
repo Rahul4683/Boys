@@ -18,9 +18,13 @@ mysqli_query($con, $query);
     <link href='https://fonts.googleapis.com/css?family=Delius Swash Caps' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <meta http-equiv="refresh" content="4;url=index.php" />
+    <meta http-equiv="refresh" content="9;url=index.php" />
 </head>
 <body>
+<audio autoplay loop>
+  <source src="Boys.mp3" /> 
+ 
+</audio>
     <?php
 include 'common/header.php';
 ?>

@@ -145,6 +145,7 @@
                             <a href="index.php" class="nav-item nav-link active">Home</a>
                             <a href="product.php" class="nav-item nav-link">Shop</a>
                             <a href="product.php" class="nav-item nav-link">Shop Detail</a>
+                           
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
                                 <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
@@ -152,7 +153,16 @@
                                     <a href="checkout.php" class="dropdown-item">Checkout</a>
                                 </div>
                             </div>
+                            <?php
+                            
+                            if (isset($_SESSION['email'])) {
+                             ?>
+                            <a href="review.php" class="nav-item nav-link">Review & Rate</a>
+                            <?php
+                          } 
+                    ?>
                             <a href="contact.php" class="nav-item nav-link">Contact</a>
+                            
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
                             <a href="" class="btn px-0">

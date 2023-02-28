@@ -1,5 +1,5 @@
 <?php
-require "includes/common.php";
+require "common/common.php";
 session_start();
 
 $email = $_POST['eMail'];
@@ -31,6 +31,6 @@ if ($num != 0) {
     $user_id = mysqli_insert_id($con);
     $_SESSION['email'] = $email;
     $_SESSION['user_id'] = $user_id;
-    header('location:products.php');
+    header('location:product.php');
 }
 ?>
