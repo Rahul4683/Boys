@@ -32,9 +32,9 @@
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
                 <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
                 <p class="mb-4">Well, A Stranger Is Just A Friend You Ain’t Met Yet.</p>
-                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Gao Devi</p>
-                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Shop no. 9211,Shaitan galli, Kassaiwada,Behind Shamshan Bhumi, Titan-F067</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>theboys@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 8879689466</p>
             </div>
             <div class="col-lg-8 col-md-12">
                 <div class="row">
