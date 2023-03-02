@@ -66,14 +66,33 @@
                     
                 </div>
                 <div class="d-inline-flex align-items-center d-block d-lg-none">
-                    <a href="" class="btn px-0 ml-2">
-                        <i class="fas fa-heart text-dark"></i>
-                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
-                    </a>
-                    <a href="cart.php" class="btn px-0 ml-2">
-                        <i class="fas fa-shopping-cart text-dark"></i>
-                        <span class="badge text-dark border border-dark rounded-circle" style="padding-bottom: 2px;">0</span>
-                    </a>
+                <?php
+                            
+                            if (isset($_SESSION['email'])) {
+                             ?>
+                               <audio id="myAudio" src="on.mp3" preload="auto" loop>
+                                
+</audio>
+
+<a onClick="togglePlay()" href="#" class="btn px-0"><i class="fas fa-music text-primary"></i><span class="badge text-secondary " style="padding-bottom: 2px;font-size: 13px;">&#128512</span></a>
+                                 <?php
+                               } 
+                         ?>
+                            <a href="#" class="btn px-0">
+                                <i class="fas fa-heart text-primary"></i>
+                                <span class="badge text-secondary " style="padding-bottom: 2px;font-size: 13px;">&#128525</span>
+                            </a>
+                            <?php
+                            
+                       if (isset($_SESSION['email'])) {
+                        ?>
+                            <a href="cart.php" class="btn px-0 ml-3">
+                                <i class="fas fa-shopping-cart text-primary"></i>
+                                <span class="badge text-secondary  " style="padding-bottom: 2px;font-size: 13px;">	&#128512;</span>
+                            </a>
+                            <?php
+                          } 
+                    ?>
                 </div>
             </div>
         </div>
@@ -165,7 +184,19 @@
                             
                         </div>
                         <div class="navbar-nav ml-auto py-0 d-none d-lg-block">
-                            <a href="" class="btn px-0">
+                        <?php
+                            
+                            if (isset($_SESSION['email'])) {
+                             ?>
+                               <audio id="myAudio" src="on.mp3" preload="auto" loop>
+                                
+</audio>
+
+<a onClick="togglePlay()" href="#" class="btn px-0"><i class="fas fa-music text-primary"></i><span class="badge text-secondary " style="padding-bottom: 2px;font-size: 13px;">&#128512</span></a>
+                                 <?php
+                               } 
+                         ?>
+                            <a href="#" class="btn px-0">
                                 <i class="fas fa-heart text-primary"></i>
                                 <span class="badge text-secondary " style="padding-bottom: 2px;font-size: 13px;">&#128525</span>
                             </a>
@@ -276,3 +307,21 @@
         </div>
       </div>
       <!--Signup trigger model ends-->
+                        </body>
+                        <script src="js/main.js"></script>
+                        <script>
+var myAudio = document.getElementById("myAudio");
+var isPlaying = false;
+myAudio.volume=0.2;
+
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+</script>
