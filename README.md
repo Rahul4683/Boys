@@ -26,7 +26,7 @@ difference between the non login user & login user
 1) login user has many option like he can add the product to the cart & does not go to checkout page wherehas on other side non login user does not have the cart or checkout option.
 2) login user has the music icon where the background music play & stop option is available and non login user does not have the music option.
 3) Means the non login user does not have acces to order the product.
-4) login user has the option to rate & review the website or product by the rate & review option on the header.
+4) login user has the option to rate & review the website or product by the rate & review option on the header. And it get saved on the database.
 
 Pages
 1) You can just change the product.php products by changing in product table in your ("ecommerce") database.
