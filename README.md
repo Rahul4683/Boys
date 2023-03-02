@@ -29,8 +29,8 @@ difference between the non login user & login user
 
 Pages
 1) You can just change the product.php products by changing in product table in your ("ecommerce") database.
-2)In contact.php their are validation you can see by clicking on contact on the header or footer, And their is Sign in and Sign out Functionality.
-3)And Their a Cart.php where you can Your product which you want and the total will be calculated automatically, You can't active the cart before login.
+2) In contact.php their are validation you can see by clicking on contact on the header or footer, And their is Sign in and Sign out Functionality.
+3) And Their a Cart.php where you can Your product which you want and the total will be calculated automatically, You can't active the cart before login.
 4) when you ordered the product or placed the product the 9 sec of order has been placed page opened and the background music(the boys theme music) is get on for the compliment of the customer.
 
 
