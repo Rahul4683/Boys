@@ -136,18 +136,18 @@
                         <div class="nav-item dropdown dropright">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><p class = "txt-color">Gromming <i class="fa fa-angle-right float-right mt-1"></i></p></a>
                             <div class="dropdown-menu drop-border position-absolute rounded-0 border-0 m-0" style="background-color:#000">
-                                <a href="" class="dropdown-item"><p class = "txt-color">Beardo</p></a>
-                                <a href="" class="dropdown-item"><p class = "txt-color">Gym</p></a>
-                                <a href="" class="dropdown-item"><p class = "txt-color">Shoe</p></a>
+                                <a href="product.php" class="dropdown-item"><p class = "txt-color">Beardo</p></a>
+                                <a href="product.php" class="dropdown-item"><p class = "txt-color">Gym</p></a>
+                                <a href="product.php" class="dropdown-item"><p class = "txt-color">Shoe</p></a>
                             </div>
                         </div>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">Shirts</p></a>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">Jeans</p></a>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">T Shirts</p></a>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">Dumbells</p></a>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">Shoes</p></a>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">Wax</p></a>
-                        <a href="" class="nav-item txt-color nav-link"><p class = "txt-color">Oil</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">Shirts</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">Jeans</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">T Shirts</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">Dumbells</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">Shoes</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">Wax</p></a>
+                        <a href="product.php" class="nav-item txt-color nav-link"><p class = "txt-color">Oil</p></a>
                     </div>
                 </nav>
             </div>
@@ -166,7 +166,7 @@
                             <a href="product.php" class="nav-item nav-link">Shop Detail</a>
                            
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down mt-1"></i></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages </a>
                                 <div class="dropdown-menu bg-primary rounded-0 border-0 m-0">
                                     <a href="cart.php" class="dropdown-item">Shopping Cart</a>
                                     <a href="checkout.php" class="dropdown-item">Checkout</a>

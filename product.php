@@ -8,32 +8,7 @@ require 'common/common.php';
 include 'common/check_if_added.php';
 ?>
 
- <!-- Offer Start -->
- <div class="container-fluid pt-5 pb-3">
-        <div class="row px-xl-5">
-            <div class="col-md-6">
-                <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/beardo with butcher.jpg" alt="">
-                    <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="product.php" class="btn btn-primary">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="product-offer mb-30" style="height: 300px;">
-                    <img class="img-fluid" src="img/25beardo_oil.png" alt="">
-                    <div class="offer-text">
-                        <h6 class="text-white text-uppercase">Save 20%</h6>
-                        <h3 class="text-white mb-3">Special Offer</h3>
-                        <a href="product.php" class="btn btn-primary">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Offer End -->
+
 
 <div class="container-fluid pt-5 pb-3" >
         <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4"><span class="bg-secondary bg-light pr-3">Featured Products</span></h2>
@@ -64,7 +39,19 @@ if (mysqli_num_rows($result) >= 1) {
                         <div class="product-img position-relative overflow-hidden">
                             <img class="img-fluid w-100" src=<?php echo $loca ?> alt="">
                             <div class="product-action">
-                                <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-shopping-cart"></i></a>
+                            <?php if (!isset($_SESSION['email'])) {?>
+                                <a class="btn btn-outline-dark btn-square" href="index.php#login"><i class="fa fa-shopping-cart"></i></a>
+                                <?php
+                        } else {
+                        if (check_if_added_to_cart($id)) {
+                         echo ' <a class="btn btn-outline-dark btn-square " href="">+<i class="fa fa-shopping-cart"></i></a>';
+                        } else {
+                            ?>
+                             <a class="btn btn-outline-dark btn-square" href="cart-add.php?id=<?php echo $id ?>"><i class="fa fa-shopping-cart"></i></a>
+                             <?php
+                            }
+                        }
+                        ?>
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="far fa-heart"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-sync-alt"></i></a>
                                 <a class="btn btn-outline-dark btn-square" href=""><i class="fa fa-search"></i></a>
@@ -137,7 +124,32 @@ while($z > 0) { ?>
         </div>
     </div>
 
-
+ <!-- Offer Start -->
+ <div class="container-fluid pt-5 pb-3">
+        <div class="row px-xl-5">
+            <div class="col-md-6">
+                <div class="product-offer mb-30" style="height: 300px;">
+                    <img class="img-fluid" src="img/beardo with butcher.jpg" alt="">
+                    <div class="offer-text">
+                        <h6 class="text-white text-uppercase">Save 20%</h6>
+                        <h3 class="text-white mb-3">Special Offer</h3>
+                        <a href="index.php" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-offer mb-30" style="height: 300px;">
+                    <img class="img-fluid" src="img/25beardo_oil.png" alt="">
+                    <div class="offer-text">
+                        <h6 class="text-white text-uppercase">Save 20%</h6>
+                        <h3 class="text-white mb-3">Special Offer</h3>
+                        <a href="index.php" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer End -->
 
 
 
