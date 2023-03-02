@@ -15,6 +15,7 @@ In database User password is in encrypted format
 
 Functionality:
 Note: You can see website without login but not the full website The full website can access by only login Users.
+
 Sign up, Sign out & Logout
 1) You can Just sign up by on clicking the "My Account" and selecting "Sign Up".
 2) Add your Name, email & password and agree the terms & condition, And the password is saved in encrypted format in database.
